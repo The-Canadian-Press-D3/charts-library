@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>The Canadian Press | Charts</title>
+
+  <!-- Prefetch DNS for external assets -->
+  <link rel="stylesheet" href="css/prism.css" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/shuffle-styles.css" />
+	<link href="//fonts.googleapis.com/css?family=Roboto|Roboto+Slab|Roboto+Condensed" rel="stylesheet">
+  
+</head>
+<body class="home">
+
+<main role="main" id="main">
+
+
+<section id="demo">
+  <div class="container">
+    <div class="row">
+      <div class="col-12@sm">
+        <h2>The Canadian Press charts library</h2>
+        <h3>Built and maintained by Lucas Timmons</h3>
+        <p>Use this library to find the type of chart you'd like to use. Click through to see a demonstration of the chart and to see how you should format your data. When you have made your decision, collaborate with us by emailing Megan Leach and Lucas Timmons. Let us know what you'd like to make and we can get started.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-4@sm col-3@md filters-group">
+        <label for="filters-search-input" class="filter-label">Search</label>
+        <input class="textfield filter__search js-shuffle-search" type="search" id="filters-search-input" />
+      </div>
+
+    </div>
+    <div class="row">
+
+      <div class="col-12@sm filters-group-wrap">
+        <div class="filters-group">
+          <p class="filter-label">Filter</p>
+          <div class="btn-group filter-options">
+            <button class="btn btn--primary" data-group="bars">Bars</button>
+            <button class="btn btn--primary" data-group="lines">Lines</button>
+            <button class="btn btn--primary" data-group="bubbles">Bubbles</button>
+            <button class="btn btn--primary" data-group="calendars">Calendars</button>
+            <button class="btn btn--primary" data-group="measures">Measures</button>
+            <button class="btn btn--primary" data-group="others">Other</button>            
+          </div>
+        </div>
+       <!-- <div class="filters-group">
+          <p class="filter-label">Sort</p>
+          <div class="btn-group sort-options">
+            <label class="btn active">
+              <input type="radio" name="sort-value" value="dom" /> Default
+            </label>
+            <label class="btn">
+              <input type="radio" name="sort-value" value="title" /> Title
+            </label>
+            <label class="btn">
+              <input type="radio" name="sort-value" value="date-created" /> Date Created
+            </label>
+          </div>
+        </div> -->
+      </div>
+    </div>
+
+  </div>
+
+  <div class="container">
+    <div id="grid" class="row my-shuffle-container">
+      
+ 
+<figure class="col-3@xs col-4@sm col-3@md picture-item picture-item--h2" data-groups='["measures","bars"]' data-title="Bullet Chart">
+  <div class="picture-item__inner">    
+    <div class="aspect aspect--16x9">
+      <div class="aspect__inner">
+        <img src="images/bullet-chart.png"/>
+        <img class="picture-item__blur" src="images/bullet-chart.png" alt="" aria-hidden="true" />
+      </div>
+    </div>    
+    <div class="picture-item__details">
+      <figcaption class="picture-item__title"><a href="charts/bullet/iframe.html" target="_blank">Bullet chart</a></figcaption>
+      <p class="picture-item__tags hidden@xs">Measure</p>
+    </div>
+      <p class="picture-item__description">A bullet graph is a variation of a bar graph. Inspired by the traditional thermometer charts and progress bars, the bullet graph serves as a replacement for dashboard gauges and meters. The bullet graph features a single, primary measure (for example, current year-to-date revenue), compares that measure to one or more other measures to enrich its meaning (for example, compared to a target), and displays it in the context of qualitative ranges of performance, such as poor, satisfactory, and good.<br><br><strong>Good for:</strong> Budgets, meeting targets</p>    
+  </div>
+</figure>
+        
+
+<figure class="col-3@xs col-4@sm col-3@md picture-item picture-item--h2" data-groups='["bubbles"]' data-title="Bubble Chart">
+  <div class="picture-item__inner">  
+    <div class="aspect aspect--16x9">
+      <div class="aspect__inner">
+        <img src="images/bubble-chart.png"/>
+        <img class="picture-item__blur" src="images/bubble-chart.png" alt="" aria-hidden="true" />  
+      </div>
+    </div>    
+    <div class="picture-item__details">
+      <figcaption class="picture-item__title"><a href="charts/bubble/iframe.html" target="_blank">Bubble Chart</a></figcaption>
+      <p class="picture-item__tags hidden@xs">Bubble</p>
+    </div>    
+      <p class="picture-item__description">A frequency chart with the data represented as the size of a bubble element. Like a word cloud, but better because it maintains fidelity of relative size and offers the actual frequency count.<br><br><strong>Good for:</strong> Speeches, text analysis</p>    
+  </div>
+</figure>
+
+<figure class="col-3@xs col-4@sm col-3@md picture-item picture-item--h2" data-groups='["bubbles"]' data-title="Bubble comparison chart">
+  <div class="picture-item__inner">
+    
+    <div class="aspect aspect--16x9">
+      <div class="aspect__inner">
+        <img src="images/bubble-comparison.png"/>
+        <img class="picture-item__blur" src="images/bubble-comparison.png" alt="" aria-hidden="true" />    
+      </div>
+    </div>    
+    <div class="picture-item__details">
+      <figcaption class="picture-item__title"><a href="charts/bubble-comparison/iframe.html" target="_blank">Bubble Comparison</a></figcaption>
+      <p class="picture-item__tags hidden@xs">Bubble</p>
+    </div>    
+      <p class="picture-item__description">A frequency chart with the data represented as the size of a bubble element. The bubbles are split between two datasets to show how frequent a common term appears for each set. It's like a word cloud, but better because it maintains fidelity of relative size and offers the actual frequency count.<br><br><strong>Good for:</strong> Speeches, text analysis, text comparison</p>    
+  </div>
+</figure>
+
+
+<figure class="col-3@xs col-4@sm col-3@md picture-item picture-item--h2" data-groups='["calendars"]' data-title="Calendar chart">
+  <div class="picture-item__inner">
+    <div class="aspect aspect--16x9">
+      <div class="aspect__inner">
+        <img src="images/calendar.png"/>
+        <img class="picture-item__blur" src="images/calendar.png" alt="" aria-hidden="true" />    
+      </div>
+    </div>    
+    <div class="picture-item__details">
+      <figcaption class="picture-item__title"><a href="charts/calendar/iframe.html" target="_blank">Monthly Calendar</a></figcaption>
+      <p class="picture-item__tags hidden@xs">Calendar</p>
+    </div>    
+      <p class="picture-item__description">A graphical representation of data where the individual values contained in a matrix are represented as colours. Used to show frequency over a particular date and time.<br><br><strong>Good for:</strong> Tweet analysis, donor analysis, stock prices, transactions by day, anything that can be tracked daily</p>    
+  </div>
+</figure>
+
+
+<figure class="col-3@xs col-4@sm col-3@md picture-item picture-item--h2" data-groups='["bars"]' data-title="Diverging bar chart">
+  <div class="picture-item__inner">
+    <div class="aspect aspect--16x9">
+      <div class="aspect__inner">
+        <img src="images/diverging-bar-chart.png"/>
+        <img class="picture-item__blur" src="images/diverging-bar-chart.png" alt="" aria-hidden="true" />    
+      </div>
+    </div>    
+    <div class="picture-item__details">
+      <figcaption class="picture-item__title"><a href="charts/diverging-bar-chart/iframe.html" target="_blank">Diverging bar</a></figcaption>
+      <p class="picture-item__tags hidden@xs">Bar</p>
+    </div>    
+      <p class="picture-item__description">Uses horizontal bars to show comparisons among categories. One axis of the chart shows the specific categories being compared, and the other axis represents a discrete value. Here they are grouped to add to 100%. The 0 of the horizontal axis in this chart moves based on positive or negative answers.<br><br><strong>Good for:</strong> Typical poll results</p>    
+  </div>
+</figure>
+
+<figure class="col-3@xs col-4@sm col-3@md picture-item picture-item--h2" data-groups='["measures"]' data-title="Guage">
+  <div class="picture-item__inner">
+    <div class="aspect aspect--16x9">
+      <div class="aspect__inner">
+        <img src="images/guage.png"/>
+        <img class="picture-item__blur" src="images/guage.png" alt="" aria-hidden="true" />    
+      </div>
+    </div>    
+    <div class="picture-item__details">
+      <figcaption class="picture-item__title"><a href="charts/guage/iframe.html" target="_blank">Guage</a></figcaption>
+      <p class="picture-item__tags hidden@xs">Measure</p>
+    </div>    
+      <p class="picture-item__description">A graphic showing value as how far along the needle is along a scale.<br><br><strong>Good for:</strong> Pointing out where something is on a defined scale</p>    
+  </div>
+</figure>
+
+<figure class="col-3@xs col-4@sm col-3@md picture-item picture-item--h2" data-groups='["bars"]' data-title="Horizontal bars">
+  <div class="picture-item__inner">
+    <div class="aspect aspect--16x9">
+      <div class="aspect__inner">
+        <img src="images/horizontal-bars.png"/>
+        <img class="picture-item__blur" src="images/horizontal-bars.png" alt="" aria-hidden="true" />    
+      </div>
+    </div>    
+    <div class="picture-item__details">
+      <figcaption class="picture-item__title"><a href="charts/horizontal-bars/iframe.html" target="_blank">Horizontal Bars</a></figcaption>
+      <p class="picture-item__tags hidden@xs">Bar</p>
+    </div>    
+      <p class="picture-item__description">Uses horizontal bars to show comparisons among categories. One axis of the chart shows the specific categories being compared, and the other axis represents a discrete value. Shows one data set only.<br><br><strong>Good for:</strong> Comparing discrete values that aren't percentages</p>    
+  </div>
+</figure>
+
+<figure class="col-3@xs col-4@sm col-3@md picture-item picture-item--h2" data-groups='["bars"]' data-title="Horizontal bars">
+  <div class="picture-item__inner">
+    <div class="aspect aspect--16x9">
+      <div class="aspect__inner">
+        <img src="images/horizontal-bars-switch.png"/>
+        <img class="picture-item__blur" src="images/horizontal-bars-switch.png" alt="" aria-hidden="true" />    
+      </div>
+    </div>    
+    <div class="picture-item__details">
+      <figcaption class="picture-item__title"><a href="charts/horizontal-bars-switch/iframe.html" target="_blank">Horizontal Bars (switch)</a></figcaption>
+      <p class="picture-item__tags hidden@xs">Bar</p>
+    </div>    
+      <p class="picture-item__description">Uses horizontal bars to show comparisons among categories. One axis of the chart shows the specific categories being compared, and the other axis represents a discrete value. Switches between multiple data sets.<br><br><strong>Good for:</strong> Comparing discrete values that aren't percentages</p>    
+  </div>
+</figure>
+
+<figure class="col-3@xs col-4@sm col-3@md picture-item picture-item--h2" data-groups='["calendars"]' data-title="Hourly heatmap">
+  <div class="picture-item__inner">
+    <div class="aspect aspect--16x9">
+      <div class="aspect__inner">
+        <img src="images/hourly-heat.png"/>
+        <img class="picture-item__blur" src="images/hourly-heat.png" alt="" aria-hidden="true" />    
+      </div>
+    </div>    
+    <div class="picture-item__details">
+      <figcaption class="picture-item__title"><a href="charts/hourly-heat/iframe.html" target="_blank">Hourly heatmap</a></figcaption>
+      <p class="picture-item__tags hidden@xs">Calendar</p>
+    </div>    
+      <p class="picture-item__description">A graphical representation of data where the individual values contained in a matrix are represented as colours. Used to show frequency over a particular date and time.<br><br><strong>Good for:</strong> Tweet analysis, donor analysis, stock prices, accidents by hours of the day, anything that can be tracked by day and hour</p>    
+  </div>
+</figure>
+
+<figure class="col-3@xs col-4@sm col-3@md picture-item picture-item--h2" data-groups='["lines"]' data-title="Multiple linne">
+  <div class="picture-item__inner">
+    <div class="aspect aspect--16x9">
+      <div class="aspect__inner">
+        <img src="images/multi-line.png"/>
+        <img class="picture-item__blur" src="images/multi-line.png" alt="" aria-hidden="true" />    
+      </div>
+    </div>    
+    <div class="picture-item__details">
+      <figcaption class="picture-item__title"><a href="charts/multi-line/iframe.html" target="_blank">Multiple line</a></figcaption>
+      <p class="picture-item__tags hidden@xs">Line</p>
+    </div>    
+      <p class="picture-item__description">Displays information as a series of data points connected by straight line segments. Similar to a scatter plot except that the measurement points are ordered (typically by their x-axis value) and joined with straight line segments. <br><br><strong>Good for:</strong> Visualizing a trend in data over intervals of time when you have many datasets or data points</p>    
+  </div>
+</figure>
+
+<figure class="col-3@xs col-4@sm col-3@md picture-item picture-item--h2" data-groups='["lines"]' data-title="Multiple area chart">
+  <div class="picture-item__inner">
+    <div class="aspect aspect--16x9">
+      <div class="aspect__inner">
+        <img src="images/multiple-area.png"/>
+        <img class="picture-item__blur" src="images/multiple-area.png" alt="" aria-hidden="true" />    
+      </div>
+    </div>    
+    <div class="picture-item__details">
+      <figcaption class="picture-item__title"><a href="charts/multiple-area/iframe.html" target="_blank">Multiple area</a></figcaption>
+      <p class="picture-item__tags hidden@xs">Area</p>
+    </div>    
+      <p class="picture-item__description">Displays information as a series of data points connected by straight line segments creating a filled in area. Similar to a scatter plot except that the measurement points are ordered (typically by their x-axis value) and joined with straight line segments. <br><br><strong>Good for:</strong> Visualizing a trend in data over intervals of time when you have a few datasets</p>  
+  </div>
+</figure>
+
+<figure class="col-3@xs col-4@sm col-3@md picture-item picture-item--h2" data-groups='["bars"]' data-title="Multiple bar chart">
+  <div class="picture-item__inner">
+    <div class="aspect aspect--16x9">
+      <div class="aspect__inner">
+        <img src="images/multiple-bar.png"/>
+        <img class="picture-item__blur" src="images/multiple-bar.png" alt="" aria-hidden="true" />    
+      </div>
+    </div>    
+    <div class="picture-item__details">
+      <figcaption class="picture-item__title"><a href="charts/multiple-bar/iframe.html" target="_blank">Multiple bars</a></figcaption>
+      <p class="picture-item__tags hidden@xs">Bar</p>
+    </div>    
+      <p class="picture-item__description">Uses vertical bars to show comparisons among categories. One axis of the chart shows the specific categories being compared, and the other axis represents a discrete value. Shows one data set only.<br><br><strong>Good for:</strong> Comparing discrete values that aren't percentages</p>   
+  </div>
+</figure>
+
+<figure class="col-3@xs col-4@sm col-3@md picture-item picture-item--h2" data-groups='["bars"]' data-title="Calendar chart">
+  <div class="picture-item__inner">
+    <div class="aspect aspect--16x9">
+      <div class="aspect__inner">
+        <img src="images/normalized-bar.png"/>
+        <img class="picture-item__blur" src="images/normalized-bar.png" alt="" aria-hidden="true" />    
+      </div>
+    </div>    
+    <div class="picture-item__details">
+      <figcaption class="picture-item__title"><a href="charts/normalized-bar/iframe.html" target="_blank">Normalized bars</a></figcaption>
+      <p class="picture-item__tags hidden@xs">Bar</p>
+    </div>    
+      <p class="picture-item__description">Uses vertical bars to show comparisons among categories. One axis of the chart shows the specific categories being compared, and the other axis represents discrete values adding to 100%.<br><br><strong>Good for:</strong> Comparing discreet values that are percentages and add to 100%</p>
+  </div>
+</figure>
+
+<figure class="col-3@xs col-4@sm col-3@md picture-item picture-item--h2" data-groups='["measures"]' data-title="Radar chart">
+  <div class="picture-item__inner">
+    <div class="aspect aspect--16x9">
+      <div class="aspect__inner">
+        <img src="images/radar.png"/>
+        <img class="picture-item__blur" src="images/radar.png" alt="" aria-hidden="true" />    
+      </div>
+    </div>    
+    <div class="picture-item__details">
+      <figcaption class="picture-item__title"><a href="charts/radar/iframe.html" target="_blank">Radar</a></figcaption>
+      <p class="picture-item__tags hidden@xs">Measure</p>
+    </div>    
+      <p class="picture-item__description">Displaying multivariate data in the form of a two-dimensional chart of three or more quantitative variables represented on axes starting from the same point. The relative position and angle of the axes isn't informative.<br><br><strong>Good for:</strong> Comparing two things based on shared statistics or values</p>    
+  </div>
+</figure>
+
+<figure class="col-3@xs col-4@sm col-3@md picture-item picture-item--h2" data-groups='["measures"]' data-title="Radial chart">
+  <div class="picture-item__inner">
+    <div class="aspect aspect--16x9">
+      <div class="aspect__inner">
+        <img src="images/radial.png"/>
+        <img class="picture-item__blur" src="images/radial.png" alt="" aria-hidden="true" />    
+      </div>
+    </div>    
+    <div class="picture-item__details">
+      <figcaption class="picture-item__title"><a href="charts/radial/iframe.html" target="_blank">Radial</a></figcaption>
+      <p class="picture-item__tags hidden@xs">Measure</p>
+    </div>    
+      <p class="picture-item__description">Displays data based on a total of a normalized percentage using a circle.<br><br><strong>Good for:</strong> Comparing data that goes over 100% in one point and under 100% in another</p>    
+  </div>
+</figure>
+
+<figure class="col-3@xs col-4@sm col-3@md picture-item picture-item--h2" data-groups='["lines"]' data-title="Scatter plot">
+  <div class="picture-item__inner">
+    <div class="aspect aspect--16x9">
+      <div class="aspect__inner">
+        <img src="images/scatter-hour.png"/>
+        <img class="picture-item__blur" src="images/scatter-hour.png" alt="" aria-hidden="true" />    
+      </div>
+    </div>    
+    <div class="picture-item__details">
+      <figcaption class="picture-item__title"><a href="charts/scatter-hour/iframe.html" target="_blank">Scatter plot</a></figcaption>
+      <p class="picture-item__tags hidden@xs">Line</p>
+    </div>    
+      <p class="picture-item__description">Uses Cartesian coordinates to display values for two variables for a set of data.The data is displayed as a collection of points, each having the value of one variable determining the position on the horizontal axis and the value of the other variable determining the position on the vertical axis.<br><br><strong>Good for:</strong> Showing where and when</p>    
+  </div>
+</figure>
+
+<figure class="col-3@xs col-4@sm col-3@md picture-item picture-item--h2" data-groups='["lines"]' data-title="Scatter plot">
+  <div class="picture-item__inner">
+    <div class="aspect aspect--16x9">
+      <div class="aspect__inner">
+        <img src="images/scatter-hour-magnitude.png"/>
+        <img class="picture-item__blur" src="images/scatter-hour-magnitude.png" alt="" aria-hidden="true" />    
+      </div>
+    </div>    
+    <div class="picture-item__details">
+      <figcaption class="picture-item__title"><a href="charts/scatter-hour-magnitude/iframe.html" target="_blank">Scatter magnitude</a></figcaption>
+      <p class="picture-item__tags hidden@xs">Line</p>
+    </div>    
+      <p class="picture-item__description">Uses Cartesian coordinates to display values for three variables for a set of data. The data is displayed as a collection of points, each having the value of one variable determining the position on the horizontal axis and the value of the other variable determining the position on the vertical axis. The size of the point can be used as a third variable about the data.<br><br><strong>Good for:</strong>  Showing where and when and how much</p> 
+  </div>
+</figure>
+
+<figure class="col-3@xs col-4@sm col-3@md picture-item picture-item--h2" data-groups='["lines"]' data-title="Stock chart">
+  <div class="picture-item__inner">
+    <div class="aspect aspect--16x9">
+      <div class="aspect__inner">
+        <img src="images/stock.png"/>
+        <img class="picture-item__blur" src="images/stock.png" alt="" aria-hidden="true" />    
+      </div>
+    </div>    
+    <div class="picture-item__details">
+      <figcaption class="picture-item__title"><a href="charts/stock/iframe.html" target="_blank">Five year stock</a></figcaption>
+      <p class="picture-item__tags hidden@xs">Line</p>
+    </div>    
+      <p class="picture-item__description">Shows a stock's performance over time. The first chart shows the close price in cyan and the mean daily price in magenta. The second chart shows the daily volume. The third chart is a brushable area chart. Click and drag to adjust the zoom on the two charts above.<br><br><strong>Good for:</strong> Showing how well a stock performed over the past five years</p>    
+  </div>
+</figure>
+
+<figure class="col-3@xs col-4@sm col-3@md picture-item picture-item--h2" data-groups='["others"]' data-title="Table">
+  <div class="picture-item__inner">
+    <div class="aspect aspect--16x9">
+      <div class="aspect__inner">
+        <img src="images/table.png"/>
+        <img class="picture-item__blur" src="images/table.png" alt="" aria-hidden="true" />    
+      </div>
+    </div>    
+    <div class="picture-item__details">
+      <figcaption class="picture-item__title"><a href="charts/table/iframe.html" target="_blank">Data table</a></figcaption>
+      <p class="picture-item__tags hidden@xs">Other</p>
+    </div>    
+      <p class="picture-item__description">A responsive data table. Much like a spreadsheet.<br><br><strong>Good for:</strong> Comparing data where a chart would make the analysis less clear</p>    
+  </div>
+</figure>
+
+<figure class="col-3@xs col-4@sm col-3@md picture-item picture-item--h2" data-groups='["others"]' data-title="Venn diagram">
+  <div class="picture-item__inner">
+    <div class="aspect aspect--16x9">
+      <div class="aspect__inner">
+        <img src="images/venn.png"/>
+        <img class="picture-item__blur" src="images/venn.png" alt="" aria-hidden="true" />    
+      </div>
+    </div>    
+    <div class="picture-item__details">
+      <figcaption class="picture-item__title"><a href="charts/venn-diagram/iframe.html" target="_blank">A-P Venn diagram</a></figcaption>
+      <p class="picture-item__tags hidden@xs">Other</p>
+    </div>    
+      <p class="picture-item__description">A diagram that shows all possible logical relations between a finite collection of different sets. Consists of multiple overlapping circles, each representing a set. Shows all possible relations between the sets. <br><br><strong>Good for:</strong> Comparing overlapping data</p>    
+  </div>
+</figure>
+
+<figure class="col-3@xs col-4@sm col-3@md picture-item picture-item--h2" data-groups='["measures"]' data-title="Waffle chart">
+  <div class="picture-item__inner">
+    <div class="aspect aspect--16x9">
+      <div class="aspect__inner">
+        <img src="images/waffle.png"/>
+        <img class="picture-item__blur" src="images/waffle.png" alt="" aria-hidden="true" />    
+      </div>
+    </div>    
+    <div class="picture-item__details">
+      <figcaption class="picture-item__title"><a href="charts/waffle/iframe.html" target="_blank">Waffle chart</a></figcaption>
+      <p class="picture-item__tags hidden@xs">Waffle</p>
+    </div>    
+      <p class="picture-item__description">Essentially a squarified pie chart. Since it does not involve angles, it’s easier for the reader to compare accurately as well as evoke emotional comparisons.<br><br><strong>Good for:</strong> When you really want to use a pie, but know you shouldn't</p>    
+  </div>
+</figure>
+
+
+
+      
+      <div class="col-1@sm col-1@xs my-sizer-element"></div>
+    </div>
+  </div>
+</section>
+		<div id="logo">
+			<img src="images/The_Canadian_Press.png" class="logoimage">
+		</div>
+
+</main>
+
+
+<script src="https://unpkg.com/core-js/client/shim.min.js"></script>
+<script src="js/shuffle.js"></script>
+<script src="js/homepage.js"></script>
+
+</body>
+</html>
+
