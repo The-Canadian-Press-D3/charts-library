@@ -1,0 +1,50 @@
+
+
+#text-select {
+  float:right;
+  margin-right: 10px;
+}
+
+#vis {
+  overflow: hidden;
+  position: relative;
+}
+
+#status {
+  padding:0 0 20px 20px;
+}
+
+#bubble-background {
+  fill: none;
+  pointer-events: all;
+}
+
+.bubble-node {
+ fill: #b3dbff;
+}
+
+.bubble-hover {
+  fill: #001f3f;
+}
+
+.bubble-selected {
+  fill: #001f3f;
+  /stroke: #fff; 
+}
+
+a.bubble-label {
+  font-family: 'Roboto', sans-serif;
+  color: #0074D9;
+  cursor: pointer;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  line-height: 1em;
+  position: absolute;
+}
+
+
+.bubble-label .bubble-label-value {
+  font: 11px sans-serif;
+  white-space: nowrap;
+}
