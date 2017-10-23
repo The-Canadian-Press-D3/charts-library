@@ -1,0 +1,9 @@
+.toolTip {
+	display: block !important;
+    opacity: 0;  
+}
+
+.label{
+    font-family: "Roboto Slab", sans-serif;
+    pointer-events: none;
+}

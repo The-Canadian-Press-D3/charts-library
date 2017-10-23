@@ -1,0 +1,51 @@
+.arc {
+  stroke-weight: 0.3;
+  fill: #c27e7e;
+}
+
+.arc2 {
+  stroke-weight: 0.3;
+  fill: #c27e7e;
+}
+
+.arc3 {
+  stroke-weight: 0.3;
+  fill: #c27e7e;
+}
+
+
+.background {
+  fill: #FFFFFF;
+  fill-opacity: 0.01;
+}
+
+.component {
+  fill: #e1e1e1;
+}
+
+.component .label {
+  text-anchor: middle;
+  fill: #0000FF;
+}
+
+
+.label {
+  text-anchor: middle;
+  font-family: "Roboto Slab";
+}
+
+.radial-svg {
+  display: block;
+  margin: 0 auto;
+}
+
+#div1, #div2, #div3 {
+	display: inline-block;
+}
+#diva, #divb, #divc {
+	display: inline-block;
+
+}
+#vis{
+	text-align: center;
+}

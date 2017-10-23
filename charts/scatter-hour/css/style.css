@@ -1,0 +1,24 @@
+.dots path {
+  fill: none;
+  stroke: #c27e7e;
+  stroke-width: 1.5px;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.axis--y line {
+  stroke-opacity: 0.2;
+}
+
+.axis--y path {
+  stroke: none;
+}
+
+.axis text {
+  font: 11px "Roboto Slab";	
+}

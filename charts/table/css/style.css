@@ -1,0 +1,131 @@
+.rwd-table {
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 250px;
+  width: 100%;  
+  max-width: 640px;
+  max-height: 600px;
+  white-space: nowrap;
+  overflow: auto;
+  display: block;
+  font-family: "Roboto Condensed", sans-serif;
+}
+.rwd-table tr {
+  border-top: 1px solid #93241d;
+  border-bottom: 1px solid #93241d;
+}
+.rwd-table th {
+  display: none;
+}
+.rwd-table td {
+  display: block;
+}
+.rwd-table td:first-child {
+  padding-top: .5em;
+}
+.rwd-table td:last-child {
+  padding-bottom: .5em;
+}
+.rwd-table td:before {
+  content: attr(data-th) ": ";
+  font-weight: bold;
+  width: 6.5em;
+  display: inline-block;
+}
+
+.imagecell, .rwd-table td {
+border: none !important;
+background: none !important;
+}
+
+.imagecell{
+	width: 100% !important;
+}
+
+.imagecell, .rwd-table td:before {
+  content: attr(data-th) "";
+  font-weight: bold;
+  width: 6.5em;
+  display: inline-block;
+}
+
+#hideme{
+	display: none;
+}
+
+.headimage{
+	width:100%;
+}
+*{
+	font-size: 99%;
+}
+@media (min-width: 480px) {
+  .rwd-table td:before {
+    display: none;
+  }
+  #hideme{
+	  display: block;
+  }
+*{
+	font-size: 100%;
+}  
+}
+.rwd-table th, .rwd-table td {
+  text-align: left;
+}
+@media (min-width: 480px) {
+  .rwd-table th, .rwd-table td {
+    display: table-cell;
+    padding: .25em .5em;
+  }
+  .rwd-table th:first-child, .rwd-table td:first-child {
+    padding-left: 0;
+  }
+  .rwd-table th:last-child, .rwd-table td:last-child {
+    padding-right: 0;
+  }
+  .headimage{
+	  width: 100%;
+  }
+}
+
+h1 {
+  font-weight: normal;
+  letter-spacing: -1px;
+  color: #93241d;
+  font-family: "Roboto Slab", sans-serif;  
+}
+p{
+  font-family: "Roboto", sans-serif;	
+}
+.small {
+	font-size: 30%;
+	font-weight: 800;
+	font-family: "Roboto Slab", sans-serif; 	
+}
+.rwd-table {
+  color: #524e4d;
+  border-radius: .4em;
+}
+.rwd-table tr {
+  border-color: #93241d;
+}
+.rwd-table th, .rwd-table td {
+  margin: .5em 1em;
+}
+
+.even {
+	background: #e6e4e5;
+}
+.odd{
+	background: #b6b4b5;
+}
+
+@media (min-width: 480px) {
+  .rwd-table th, .rwd-table td {
+    padding: 1em !important;
+  }
+}
+.rwd-table th, .rwd-table td:before {
+  color: #93241d;
+}
