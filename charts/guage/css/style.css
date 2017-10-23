@@ -1,0 +1,37 @@
+#vis g.arc {
+		fill: steelblue;
+	}
+
+	#vis g.pointer {
+		fill: #ddd;
+		stroke: #111111;
+	}
+	
+	#vis g.label text {
+		text-anchor: middle;
+		font-size: 14px;
+		font-weight: bold;
+		fill: #666;
+		font-family: "Roboto Slab";
+	}
+	
+@media (max-width: 399px) {
+#vis g.label text {
+		text-anchor: middle;
+		font-size: 8px;
+		font-weight: bold;
+		fill: #666;
+		font-family: "Roboto Slab";
+	}
+}	
+	
+	.gauge{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+#karl, #mcd, #leafs{
+	cursor: pointer;
+	color: #c27e7e;
+}	

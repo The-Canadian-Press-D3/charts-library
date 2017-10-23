@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+	<title>Chart Template</title>
+	<meta charset='UTF-8'>
+	<meta name="robots" content="noindex">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/core.css" type="text/css" media="screen" charset="utf-8">	
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8">		
+	<link href="//fonts.googleapis.com/css?family=Roboto|Roboto+Slab|Roboto+Condensed" rel="stylesheet">
+</head>
+<body>
+	<div id="wrapper">
+		<h2>Headline</h2>
+		<p>Horizontal bars that are updatable. Data is easily loaded from a csv file.</p>
+		<p>Hover over each bar for the exact amount.</p>
+		<p class="smaller">Source: | Graphic by: Lucas Timmons</p>
+		<div id="buttons">			
+		 <a href="#" class="myButton bactive" id="but1">Revenues</a>
+		 <a href="#" class="myButton" id="but2">Expenses</a>		 
+		 <a href="#" class="myButton" id="but3">Program Expenses</a>
+		 <a href="#" class="myButton" id="but4">Public Debt Charges</a>
+		 <a href="#" class="myButton" id="but5">Federal Debt</a>
+		 <a href="#" class="myButton" id="but6">Debt to GDP Ratio</a>	
+		</div>
+		<div id="vis"></div>
+			<img src="images/The_Canadian_Press.png" class="logoimage">
+	</div>				
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>	
+<script type="text/javascript" src="js/jquery.tipsy.js"></script>
+<script type="text/javascript" src="js/d3.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+       <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-7392922-1');ga('send','pageview');
+        </script>	
+</body>
+</html>

@@ -1,0 +1,83 @@
+svg {
+    width: 90%;
+    height: 465px;
+    position: center;
+}
+path.slice {
+    stroke-width: 2px;
+}
+text {
+    font-family: "Roboto Slab", sans-serif;
+}
+polyline {
+    opacity: .3;
+    stroke: black;
+    stroke-width: 2px;
+    fill: none;
+}
+.labelValue {
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 60%;
+    opacity: .5;
+}
+label {
+    font-family: "Roboto Slab", sans-serif;
+    font-weight: normal;
+}
+.legend {
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 60%;
+}
+rect {
+    stroke-width: 2;
+}
+text {
+    font: 10px sans-serif;
+}
+text.value {
+    font-size: 200%;
+    fill: white;
+}
+text.label {
+    font-size: 100%;
+}
+.axis text {
+    font: 10px;
+    font-family: "Roboto Slab", sans-serif;
+}
+.axis path {
+    fill: none;
+    stroke: #000;
+}
+.axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+.axis .tick line {
+    stroke-width: 1;
+    stroke: rgba(0, 0, 0, 0.2);
+}
+.axisHorizontal path {
+    fill: none;
+}
+.axisHorizontal line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+.axisHorizontal .tick line {
+    stroke-width: 1;
+    stroke: rgba(0, 0, 0, 0.2);
+}
+.bold0 {
+    fill: #c27e7e;
+    fill-opacity: .7;
+}
+.bold1 {
+    fill: #610b30;
+    fill-opacity: .7;
+}
+.x.axis path {
+    display: none;
+}

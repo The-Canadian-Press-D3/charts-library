@@ -1,0 +1,64 @@
+body {
+    text-rendering: optimizeLegibility;
+    color: #444;
+    background: #eee;
+}
+.toolTip {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    position: absolute;
+    padding: 5px;
+    z-index: 100000;
+    display: none;
+    width: auto;
+    height: auto;
+    color: black;
+    background-color: #000;
+    color: #FFF;
+    max-width: 200px;
+    padding: 5px 8px 4px 8px;
+    text-align: center;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    pointer-events: none;
+}
+#wrapper {
+    width: 100%;
+    max-width: 640px;
+    min-width: 280px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border-radius: 20px;
+    padding-bottom: 20px;
+}
+p {
+    font-size: 14px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-family: "Roboto", sans-serif;
+}
+h2 {
+    font-family: "Roboto Slab", sans-serif;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 20px;
+    padding-top: 10px;
+}
+h3 {
+    font-family: "Roboto Slab", sans-serif;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 18px;
+}
+.smaller {
+    font-size: 70%;
+}
+.logoimage{
+	height: 25px; 
+	display: block; 
+	margin-left: auto; 
+	margin-right: auto;
+}

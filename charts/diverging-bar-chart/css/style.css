@@ -1,0 +1,73 @@
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+.legbox {
+    width: 30px;
+    height: 30px;
+    background-color: red;
+}
+#legend {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    position: absolute;
+    padding: 5px;
+    z-index: 100000;
+    display: none;
+    width: 250px;
+    height: auto;
+    color: black;
+    background-color: #000;
+    color: #FFF;
+    padding: 5px 8px 4px 8px;
+    text-align: left;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+#legendtrigger,
+.subbar {
+    cursor: pointer;
+}
+#tablelegend {
+    margin-left: 20px;
+}
+#leg1a {
+    background-color: #7b3294;
+}
+#leg2a {
+    background-color: #c2a5cf;
+}
+#leg3a {
+    background-color: #DDDDDD;
+}
+#leg4a {
+    background-color: #a6dba0;
+}
+#leg5a {
+    background-color: #008837;
+}
+#thequestiontext {
+    font-style: italic;
+    font-size: 16px;
+    color: black;
+}
+.tick {
+    font-size: 12px;
+    font-family: "Roboto Slab", sans-serif;
+}
+@media screen and (max-width: 340px) {
+    p {
+        font-size: 12px;
+    }
+    #thequestiontext {
+        font-size: 13px;
+    }
+    .toolTip {
+        font-size: 12px;
+    }
+}

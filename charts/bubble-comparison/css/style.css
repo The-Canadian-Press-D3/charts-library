@@ -1,0 +1,110 @@
+#g-chart {
+  overflow: hidden;
+  position: relative;
+}
+
+.g-labels {
+	position: relative;
+}
+
+.g-name{
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+  line-height: 1em;
+}
+
+.g-value{
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+  line-height: 1em;
+}
+
+
+.g-swatch {
+  width: 6px;
+  height: 8px;
+  display: inline-block;
+  position: relative;
+  top: 1px;
+  margin: 0 3px;
+}
+
+.g-LIBERAL.g-swatch {
+  background-color: #FF4136;
+  border-radius: 0 4px 4px 0;
+}
+
+.g-CONSERVATIVES.g-swatch {
+  background-color: #85baf1;;
+  border-radius: 4px 0 0 4px;
+}
+
+.g-LIBERAL.g-swatch {
+  background-color: #FF4136;
+}
+
+
+.g-node .g-CONSERVATIVES {
+  fill: #85baf1;;
+}
+
+
+.g-node .g-LIBERAL {
+  fill: #FF4136;
+}
+
+
+.g-node .g-split {
+  stroke: #000;
+  stroke-opacity: .18;
+  shape-rendering: crispEdges;
+}
+
+a.g-label {
+  color: inherit;
+  cursor: pointer;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  line-height: 1em;
+  position: absolute;
+}
+
+.g-label .g-value {
+  font: 11px sans-serif;
+  white-space: nowrap;
+}
+
+.g-overlay,
+.g-node,
+.g-label {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.g-overlay {
+  fill: none;
+  pointer-events: all;
+}
+
+.g-body {
+  min-height: 700px;
+}
+
+.g-has-topic .g-isnt-topic,
+.g-hasnt-topic .g-is-topic {
+  display: none;
+}
+
+.g-body h3 {
+  font-size: 18px;
+  line-height: 1.4em;
+ 
+  font-weight: normal;
+  margin-bottom: 0.9em;
+}	

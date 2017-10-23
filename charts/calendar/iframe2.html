@@ -1,0 +1,109 @@
+<html>
+	<head>
+		<title></title>
+	<style>
+.myButton {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #f6f6f6));
+	background:-moz-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+	background:-webkit-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+	background:-o-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+	background:-ms-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+	background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0);
+	background-color:#ffffff;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#666666;
+	font-family: 'Roboto Slab', serif;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f6f6f6), color-stop(1, #ffffff));
+	background:-moz-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+	background:-webkit-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+	background:-o-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+	background:-ms-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+	background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6f6f6', endColorstr='#ffffff',GradientType=0);
+	background-color:#f6f6f6;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+h2{
+	font-family: 'Roboto Slab', serif;
+}
+p{
+	font-family: 'Roboto', sans-serif;
+}
+		
+		</style>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>	
+		<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet">			
+	</head>
+	<body style="background-color: #d3d3d3;">
+		<div style="display: block; margin-left: auto; margin-right: auto;">
+			<div style="display: block; margin-left: auto; margin-right: auto; width: 600px;">
+		<h2>Opinion Poll</h2>
+		<p>This is a preview of our opinion poll graphic as it will appear on your website.</p>
+		<p>It is designed to be fully responsive. To see how it looks at different sizes, use the buttons below.</p>
+		<p><a href="#" class="myButton" id="but1">960px</a><a href="#" class="myButton" id="but2">840px</a><a href="#" class="myButton" id="but3">640px</a><a href="#" class="myButton" id="but4">540px</a><a href="#" class="myButton" id="but5">450px</a><a href="#" class="myButton" id="but6">300px</a></p>
+		<p>Current dimensions: <span id="wid">840</span>px wide by 1000px tall.</p>
+		<hr>
+			</div>
+		<div id="thediv" style="width: 840px; margin-left: auto; margin-right: auto;">
+		<iframe id="theiframe" src="index.html" frameborder="0" scrolling="auto" style="width: 100%; height: 1000px; display: block; margin-left: auto; margin-right: auto;"></iframe>
+		</div>
+		</div>
+		<script>
+			$("#but1").click(function(){
+				$("#thediv").css("width",960);
+				$("#wid").html("960");
+				$('#theiframe').attr('src', "index.html");
+			});
+			
+			$("#but2").click(function(){
+				$("#thediv").css("width",840);
+				$("#wid").html("840");
+				$('#theiframe').attr('src', "index.html");
+			});
+			
+			$("#but3").click(function(){
+				$("#thediv").css("width",640);
+				$("#wid").html("640");
+				$('#theiframe').attr('src', "index.html");
+			});
+			
+			$("#but4").click(function(){
+				$("#thediv").css("width",540);
+				$("#wid").html("540");
+				$('#theiframe').attr('src', "index.html");
+			});
+			
+			$("#but5").click(function(){
+				$("#thediv").css("width",450);
+				$("#wid").html("450");
+				$('#theiframe').attr('src', "index.html");
+			});
+			
+			$("#but6").click(function(){
+				$("#thediv").css("width",300);
+				$("#wid").html("300");
+				$('#theiframe').attr('src', "index.html");
+			});															
+		</script>
+	</body>
+</html>
